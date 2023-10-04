@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        
+        body {
+            background-color: rgb(228, 220, 220);
+        }
+
+
+
+
+
+
+        .navbar {
+            background-color: #0d6efd; 
+        }
+
+        .navbar-brand {
+            color: #fff; 
+            font-size: 24px; 
+            font-weight: bold;
+        }
+
+        .navbar-nav .nav-link {
+            color: #fff; 
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #fff; 
+            background-color: #0056b3; 
+            border-radius: 8px; 
+        }
+
+        .search-box {
+            position: relative;
+        }
+
+        .search-input {
+            border: none;
+            border-radius: 4px;
+            padding: 0.5rem 1rem;
+        }
+
+        .search-button {
+            background-color: #0056b3; 
+            color: #fff; 
+            border: none;
+            border-radius: 4px;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+        }
+
+        .login-button {
+            background-color: #010502; 
+            color: #fff; 
+            border: none;
+            border-radius: 4px;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+        }
+
+        .social-icons {
+            margin-left: 1rem; 
+        }
+
+        .social-icons a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 20px;
+            margin-right: 10px;
+        }
+
+
+
+
+
+
+
+        .doctors-section {
+            padding: 50px 0;
+        }
+
+        .doctor-card {
+            background-color: #f8f8f8c9;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s, background-color 0.2s, box-shadow 0.2s;
+            margin: 10px;
+            padding: 20px;
+        }
+
+        .doctor-card:hover {
+            transform: translateY(-5px);
+            background-color: #84c4e994;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .doctor-card img {
+            max-width: 100%;
+            border-radius: 50;
+        }
+
+        .doctor-name {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .doctor-specialist {
+            font-size: 16px;
+            color: #666;
+        }
+
+        .doctor-info {
+            font-size: 14px;
+            color: #888;
+            margin-top: 10px;
+        }
+
+        @media (max-width: 767px) {
+       
+            .doctor-card {
+                margin: 10px 0;
+            }
+        }
+
+
+
+        
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        .footer h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .footer p {
+            font-size: 16px;
+        }
+
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-links ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-links ul li {
+            margin-bottom: 10px;
+        }
+
+        .social-icons {
+            font-size: 24px;
+        }
+
+        .social-icons a {
+            margin-right: 15px;
+        }
+
+
+
+
+
+
+
+
+
+
+    </style>
+    <title>Doctors - Medical Clinic</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Medical Clinic</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="service.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Doctors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="search-box">
+                <input type="text" class="search-input" placeholder="Search...">
+                <button class="search-button">Search</button>
+            </div>
+            <button class="login-button"><a href="login.html">Login</a></button>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-telegram"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <section class="doctors-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="doctor-card">
+                        <img src="doctimg2.jpg" alt="Doctor 1">
+                        <div class="doctor-name">Dr. John Doe</div>
+                        <div class="doctor-specialist">Cardiologist</div>
+                        <div class="doctor-info">Working Hours: Mon-Fri, 9 AM - 5 PM</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="doctor-card">
+                        <img src="doctimg3.jpg" alt="Doctor 2">
+                        <div class="doctor-name">Dr. Jane Smith</div>
+                        <div class="doctor-specialist">Pediatrician</div>
+                        <div class="doctor-info">Working Hours: Tue-Sat, 8 AM - 4 PM</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="doctor-card">
+                        <img src="doct3.jpg" alt="Doctor 3">
+                        <div class="doctor-name">Dr. Helen Brook</div>
+                        <div class="doctor-specialist">Dermatologist</div>
+                        <div class="doctor-info">Working Hours: Mon-Wed, 10 AM - 6 PM</div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-md-4">
+                    <div class="doctor-card">
+                        <img src="doctimg5.jpg" alt="Doctor 4">
+                        <div class="doctor-name">Dr. Robert Turner</div>
+                        <div class="doctor-specialist">Gynecologist</div>
+                        <div class="doctor-info">Working Hours: Mon-Fri, 9 AM - 5 PM</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="doctor-card">
+                        <img src="doctimg6.jpg" alt="Doctor 5">
+                        <div class="doctor-name">Dr. David Wilson</div>
+                        <div class="doctor-specialist">Orthopedist</div>
+                        <div class="doctor-info">Working Hours: Tue-Sat, 8 AM - 4 PM</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="doctor-card">
+                        <img src="doctimg8.jpg" alt="Doctor 6">
+                        <div class="doctor-name">Dr. Sarah Adams</div>
+                        <div class="doctor-specialist">ENT Specialist</div>
+                        <div class="doctor-info">Working Hours: Mon-Wed, 10 AM - 6 PM</div>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="col-md-4">
+                    <div class="doctor-card">
+                        <img src="doctimg7.jpg" alt="Doctor 7">
+                        <div class="doctor-name">Dr. Emily Brown</div>
+                        <div class="doctor-specialist">Ophthalmologist</div>
+                        <div class="doctor-info">Working Hours: Mon-Fri, 9 AM - 5 PM</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="doctor-card">
+                        <img src="mdoctimg7.jpg" alt="Doctor 8">
+                        <div class="doctor-name">Dr. Christopher Lee</div>
+                        <div class="doctor-specialist">Psychiatrist</div>
+                        <div class="doctor-info">Working Hours: Tue-Sat, 8 AM - 4 PM</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="doctor-card">
+                        <img src="doctimg10.jpg" alt="Doctor 9">
+                        <div class="doctor-name">Dr. Laura White</div>
+                        <div class="doctor-specialist">Neurologist</div>
+                        <div class="doctor-info">Working Hours: Mon-Wed, 10 AM - 6 PM</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+    
+                <div class="col-12 col-md-4">
+                    <h1>Medical Clinic</h1>
+                    <p>Thank You for Visiting Our Clinic's Website,
+    <br>
+                        We sincerely appreciate your visit to our clinic's website. Your time and interest mean a lot to us.</p>
+                </div>
+    
+    
+    
+                <div class="col-12 col-md-4">
+                    <h3>Quick Links</h3>
+                    <div class="footer-links">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="service.html">Services</a></li>
+                            <li><a href="#">Doctors</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+    
+                
+                
+                <div class="col-12 col-md-4">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
