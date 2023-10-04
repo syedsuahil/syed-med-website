@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+   <style>
+    body {
+    background-image: url(loginbg.jpg);
+    background-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.login-container {
+    background-size: 100%;
+    width: 300px;
+    margin: 100px auto;
+    background-color: #ffffff48;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+h2 {
+    text-align: center;
+}
+
+.input-container {
+    margin: 10px 0;
+}
+
+.input-container input {
+    width: 90%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid navy;
+    border-radius: 10px;
+}
+
+.btn-container {
+    text-align: center;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.forgot-password {
+    text-align: right;
+
+}
+.forgot-password a:hover{
+    color: darkmagenta;
+}
+
+
+.register-link {
+    text-align: center;
+    margin-top: 10px;
+}
+.register-link a:hover{
+    color: darkmagenta;
+}
+
+.icon{
+    text-align: center;
+}
+
+#fb:hover{
+    background-color: rgb(105, 105, 184);
+    color: black;
+
+}
+#insta:hover{
+    background-color: rgb(204, 44, 62);
+    color: black;
+
+}
+
+#insta:hover{
+    background-color: rgb(204, 44, 62);
+    color: black;
+
+}
+#tele:hover{
+    background-color: rgb(103, 178, 235);
+    color: black;
+
+}
+   </style>
+</head>
+<body>
+    <div class="login-container">
+        <form action="#"></form>
+        <h2>Login</h2>
+        <div class="input-container">
+            <input type="text" placeholder="Username">
+        </div>
+        <div class="input-container">
+            <input type="password" placeholder="Password">
+        </div>
+        <div class="forgot-password">
+            <a href="#">Forgot Password?</a>
+        </div>
+        <br>
+        <div class="btn-container">
+            <button class="btn">Login</button>
+        </div>
+        <div class="register-link">
+            Don't have an account? <a href="register.html">Register</a>
+        </div>
+        <br>
+        <div class="icon">
+            <button>
+            <i id="fb" class="fab fa-facebook"></i>
+        </button>
+            <button>
+            <i id="insta" class="fab fa-instagram"></i>
+        </button>
+        <button>
+            <i id="tele" class="fab fa-telegram"></i>
+        </button>
+        </div>
+    </form>
+    </div>
+</body>
+</html>
