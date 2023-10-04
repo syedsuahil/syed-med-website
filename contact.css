@@ -1,0 +1,191 @@
+.navbar {
+    background-color: #0d6efd; 
+}
+
+.navbar-brand {
+    color: #fff; 
+    font-size: 24px; 
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    color: #fff; 
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #fff;
+    background-color: #0056b3; 
+    border-radius: 8px; 
+}
+
+
+.search-box {
+    position: relative;
+}
+
+.search-input {
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+}
+
+.search-button {
+    background-color: #0056b3; 
+    color: #fff; 
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.login-button {
+    background-color: #030a04;
+    color: #fff; 
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.social-icons {
+    margin-left: 1rem; 
+}
+
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+body {
+    background-color: #f0f0f0; 
+}
+
+.contact-section {
+    padding: 100px 0;
+}
+
+.contact-info {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.contact-info:hover {
+    transform: translateY(-5px);
+    background-color: #f0f0f0;
+}
+
+.contact-info h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.contact-info p {
+    font-size: 18px;
+    color: #666;
+}
+
+.contact-info i {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #007bff; 
+}
+
+.contact-image {
+    margin-top: 20px;
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+.contact-image:hover {
+    transform: scale(1.05);
+}
+
+.paragraph-section {
+    padding: 40px 0;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.paragraph-section:hover {
+    transform: translateY(-5px);
+    background-color: #f0f0f0;
+}
+
+.paragraph-section p {
+    font-size: 18px;
+    color: #333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.footer p {
+    font-size: 16px;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    font-size: 24px;
+}
+
+.social-icons a {
+    margin-right: 15px;
+}
