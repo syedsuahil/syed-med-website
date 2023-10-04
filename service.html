@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+
+    <style>
+
+.navbar {
+            background-color: #0d6efd; 
+        }
+
+        .navbar-brand {
+            color: #fff; 
+            font-size: 24px; 
+            font-weight: bold;
+        }
+
+        .navbar-nav .nav-link {
+            color: #fff; 
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #fff; 
+            background-color: #0056b3; 
+            border-radius: 8px; 
+        }
+
+        .search-box {
+            position: relative;
+        }
+
+        .search-input {
+            border: none;
+            border-radius: 4px;
+            padding: 0.5rem 1rem;
+        }
+
+        .search-button {
+            background-color: #0056b3; 
+            color: #fff; 
+            border: none;
+            border-radius: 4px;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+        }
+
+        .login-button {
+            background-color: #010502; 
+            color: #fff; 
+            border: none;
+            border-radius: 4px;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+        }
+
+        .social-icons {
+            margin-left: 1rem; 
+        }
+
+        .social-icons a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 20px;
+            margin-right: 10px;
+        }
+
+
+
+
+
+
+
+        body {
+            background: url('bg2.jpg') no-repeat center center fixed;
+            background-size: cover;
+            background-color: skyblue;
+        }
+
+        .services-section {
+            padding: 100px 0;
+        }
+
+        .service-card {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            transition: transform 0.2s;
+        }
+
+        .service-card:hover {
+            transform: scale(1.05);
+        }
+
+        .service-card h3 {
+            font-size: 24px;
+        }
+
+        .service-card p {
+            font-size: 16px;
+        }
+
+
+
+        .vertical-line {
+            border-left: 1px solid #ddd;
+            height: 100%;
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+
+        @media (max-width: 767px) {
+
+            .vertical-line {
+                display: none;
+            }
+
+            .service-card {
+                margin: 0;
+            }
+        }
+    </style>
+    <title>Services - Medical Clinic</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Medical Clinic</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="doctors.html">Doctors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="search-box">
+                <input type="text" class="search-input" placeholder="Search...">
+                <button class="search-button">Search</button>
+            </div>
+            <button class="login-button"><a href="login.html">Login</a></button>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-telegram"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- Service Section -->
+    <section class="services-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-12">
+                    <div class="service-card">
+                        <h3>Primary Care Service</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat laboriosam natus dolores labore atque minima!</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="service-card">
+                        <h3>Diagnostic Serives</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam magni corporis quod culpa facilis voluptates!</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="service-card">
+                        <h3>Emergency Care</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet adipisci expedita explicabo corporis! Sint, cum.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="service-card">
+                        <h3>Women's Health Services</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet adipisci expedita explicabo corporis! Sint, cum.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="service-card">
+                        <h3>Physical Therapy</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet adipisci expedita explicabo corporis! Sint, cum.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="service-card">
+                        <h3>Allergy and Immuology</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet adipisci expedita explicabo corporis! Sint, cum.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="service-card">
+                        <h3>Eye Care</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet adipisci expedita explicabo corporis! Sint, cum.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="service-card">
+                        <h3>Home Healthcare</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet adipisci expedita explicabo corporis! Sint, cum.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="service-card">
+                        <h3>Ear,Nose and Throat(ENT)</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet adipisci expedita explicabo corporis! Sint, cum.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
